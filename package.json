@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:server",
     "start": "cd server && npm run start",
+    "build:server": "cd server && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/TerjeSS/express-hero/issues"
   },
-  "homepage": "https://github.com/TerjeSS/express-hero#readme"
+  "homepage": "https://github.com/TerjeSS/express-hero#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
