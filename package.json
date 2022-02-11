@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev:server": "cd server && nodemon server.js",
     "build": "npm run build:server",
     "start": "cd server && npm run start",
     "build:server": "cd server && npm install",
@@ -19,8 +20,6 @@
   "bugs": {
     "url": "https://github.com/TerjeSS/express-hero/issues"
   },
-  "homepage": "https://github.com/TerjeSS/express-hero#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+  "homepage": "https://github.com/TerjeSS/express-hero#readme"
+  
 }
