@@ -7,6 +7,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import Login from "./Login";
 
 
 const Homepage = () => {
@@ -20,7 +21,7 @@ const Homepage = () => {
         return (
             <BrowserRouter>
        <Routes>
-           <Route path={"/"} element={<Homepage />} />
+           <Route path={"/"} element={<Login />} />
            <Route path={"/*"} element={<h2>Not found</h2>} />
        </Routes>
        </BrowserRouter>

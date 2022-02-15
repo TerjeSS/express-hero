@@ -3,6 +3,17 @@ import path from 'path';
 
 const app = express();
 
+const users = [
+	{
+		username : 'admin',
+		password : 'admin'
+	},
+	{
+		username : 'terje',
+		password : 'terje'
+	}
+];
+
 app.get('/api/login', (req, res, next) => {
 	res.json({ username: 'Noen André Persson' });
 });
