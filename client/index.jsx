@@ -7,13 +7,12 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Login from "./Login";
+import Signin from "./Signin";
 
 
 const Homepage = () => {
     return(
-        <div>Welcome home</div>
-        )
+        <Link to={"/signin"}>Log in</Link>)
     }
     
     const App = () => {
@@ -21,7 +20,8 @@ const Homepage = () => {
         return (
             <BrowserRouter>
        <Routes>
-           <Route path={"/"} element={<Login />} />
+           <Route path={"/"} element={<Homepage />} />
+           <Route path={"/signin"} element={<Signin />} />
            <Route path={"/*"} element={<h2>Not found</h2>} />
        </Routes>
        </BrowserRouter>
