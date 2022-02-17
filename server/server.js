@@ -9,7 +9,7 @@ dotenv.config();
 
 const app = express();
 app.use(bodyparser());
-app.use(cookieparser(process.env.COOKIE_SECRET))
+app.use(cookieparser(process.env.COOKIE_SECRET || "test"))
 app.use(urlencoded({
     extended: false
 }))
