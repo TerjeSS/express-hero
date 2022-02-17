@@ -40,6 +40,7 @@ app.post("/login", (req, res, next) => {
 		res.cookie("username", username, {signed: true})
 		res.redirect("/users")
 	} else{
+	    res.clearCookie("username")
 		res.sendStatus(401)
 	}
 }
@@ -49,7 +50,7 @@ app.get("/login", (req, res) => {
     if (!req.user) {
         res.sendStatus(401)
     } else {
-        res.send("not ok");
+        res.send("logged in");
     }
 })
 
