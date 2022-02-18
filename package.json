@@ -18,6 +18,8 @@
   "bugs": {
     "url": "https://github.com/TerjeSS/express-hero/issues"
   },
-  "homepage": "https://github.com/TerjeSS/express-hero#readme"
-  
+  "homepage": "https://github.com/TerjeSS/express-hero#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
 }
